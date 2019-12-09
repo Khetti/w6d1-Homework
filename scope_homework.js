@@ -58,7 +58,11 @@ console.log('Second Verdict: ', secondVerdict);
 /* Episode 3 Comments
 console.log output: "First Verdict: The murderer is Mrs. Peacock."
 console.log output: "Second Verdict: The murderer is Professor Plum."
-The first output calls the declareMurderer function, wherein the murderer variable is a let. This means that the value of this variable is not accessible outside of that function. The second output returns the murderer variable but, as we have no access to the one with the value Mrs. Peacock, the only one available is Professor Plum. */
+The first output calls the declareMurderer function, wherein the
+murderer variable is a let. This means that the value of this variable
+is not accessible outside of that function. The second output returns
+the murderer variable but, as we have no access to the one with the
+value Mrs. Peacock, the only one available is Professor Plum. */
 
 Episode 4
 let suspectOne = 'Miss Scarlet';
