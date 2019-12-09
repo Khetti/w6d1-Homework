@@ -148,7 +148,9 @@ changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
 /* Episode 7 Comments
-   */
+console.log output: "The murderer is Miss Scarlet"
+Change in murderer: Professor Plum -> Mr Green -> Colonel Mustard -> Miss Scarlet
+the variable definition of the functions and their contents doesn't actually matter here, as the murderer variable is a let defined outside of any function. as a result, it is changed three times and Miss Scarlet is ultimately the value at the time of the declareMurderer function is called.*/
 
 Episode 8
 const scenario = {
@@ -186,7 +188,9 @@ changeScenario();
 const verdict = declareWeapon();
 console.log(verdict);
 /* Episode 8 Comments
-   */
+console.log output: "The weapon is Candle Stick."
+Changes to weapon property: Lead Pipe -> Candle Stick
+We have another scenario where the object is defined as a constant, but no changes are attempted on the object itself, instead the properties are being indirectly changed. As a result, calling the changeScenario function causes a cascade of changes, as all criteria for the conditionals (room === "Dining Room" then murderer === "Colonel Mustard") are met, allowing the weapon property to be updated to Candle Stick.*/
 
 Episode 9
 let murderer = 'Professor Plum';
@@ -202,4 +206,6 @@ const declareMurderer = function() {
 const verdict = declareMurderer();
 console.log(verdict);
 /* Episode 9 Comments
-   */
+console.log output: "The Murderer is Professor Plum."
+In this episode, we have a conditional whose requirements are met, however the murderer variable in this block is not accessible outside. As a result, the initial murderer variable is not changed and Professor Plum is output.
+*/
